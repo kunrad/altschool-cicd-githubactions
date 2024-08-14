@@ -36,8 +36,8 @@ jobs:
         
         - name: Commit and Push if changes
           run: |
-            git config user.name github-actions
-            git config user.email github-actions@github.com
+            git config user.name kunrad
+            git config user.email duruconrad@gmail.com
             git add output.txt
             git commit -m "Updated output.txt" || echo "No changes to commit"
             git push
