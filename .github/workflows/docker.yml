@@ -33,7 +33,7 @@ jobs:
           uses: docker/metadata-action@v3
           with:
             images: |
-              ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+              ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
         - name: Build and Push Docker Image
           uses: docker/build-push-action@v2
